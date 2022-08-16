@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai Habit</title>
+    <link rel="stylesheet" href="order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <!-- logo -->
+     <link
+     rel="shortcut icon"
+     href="head-logo.png"
+     type="image/x-icon"
+   />
+   <!-- sweet alert js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>;
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <form action="" class="buyer_form">
+          <!-- name -->
+          <div class="title">
+            <p>Chai Habit</p>
+            <p class="tagline">Taste it, Make it a Habit.</p>
+          </div>
+          <!-- user form -->
+          <div class="user-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <!--address  -->
+          <div class="user-form">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" required />
+          </div>
+          <!-- phone -->
+          <div class="user-form">
+            <label for="phone">Phone </label>
+            <input type="text" name="phone" id="phone" required />
+          </div>
+          <!-- emial -->
+          <div class="user-form email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <!-- Buy product -->
+          <div class="buy">
+            
+            <p class="flavor-label">Milkea Flavor</p>
+
+            <select name="" id="item" class="menu-cbox">
+              <option value=""></option required>
+              <option>₱109  Choco Hazelnut</option>
+              <option>₱79  Choco Banana</option>
+              <option>₱99  Classic Waffle</option>
+                <option>₱69 Rocky Road</option>
+            </select>
+
+            <div class="buy">
+              <p class="flavor-label">Quantity</p>
+              <input type="number" min="0" id="quantity" class="menu-cbox" required />
+            </div>
+            <!-- Price -->
+            <div class="buy">
+              <p class="flavor-label">Price</p>
+              <input type="text" placeholder="Amount Show Here" id="price" class="menu-cbox" required />
+             
+            </div>
+            <div class="button">
+              <input type="button" value="Buy" onclick="buy()" id="btn" />
+            </div>
+            <!-- div of buy -->
+          </div>
+        </form>
+        <!-- div for form box -->
+      </div>
+      <!-- nxt div id for container -->
+    </div>
+    <script src="order.js"></script>
+  </body>
+</html>

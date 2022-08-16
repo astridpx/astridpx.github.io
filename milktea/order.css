@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  /* background: linear-gradient(rgba(120, 207, 98, 0.2), rgba(27, 110, 27, 0.2)); */
+  background: linear-gradient(rgba(63, 102, 54, 0.2), rgba(18, 65, 18, 0.2)),
+    url(bg-order.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.form-box {
+  border: 2px solid rgb(5, 32, 12);
+  height: 600px;
+  width: 400px;
+  background-color: rgb(132, 255, 169);
+  box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.25);
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(11, 31, 18);
+}
+.tagline {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+.user-form {
+  padding: 14px 30px;
+}
+.user-form input {
+  /* background: transparent; */
+  border: 2px solid rgb(5, 32, 12);
+  float: right;
+  margin-right: 10%;
+  height: 25px;
+  border-radius: 7px;
+  width: 210px;
+}
+.user-form label {
+  font-size: 20px;
+  font-weight: 560;
+  font-family: "Merriweather", serif;
+}
+.email {
+  padding-bottom: 40px;
+}
+/* .buy {
+ padding-left: 60px;
+} */
+.flavor-label {
+  font-size: 20px;
+  font-weight: 560;
+  text-align: center;
+  /* padding-bottom: 3px; */
+  /* padding-top: 20px; */
+}
+
+.menu-cbox {
+  margin-left: 120px;
+  width: 163px;
+  height: 25px;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#btn {
+  text-align: center;
+  height: 35px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: rgb(59, 224, 123);
+  /* padding-top: 30px; */
+  margin-top: 30px;
+  margin-left: 37%;
+  border: 1px solid rgb(17, 59, 45);
+  cursor: pointer;
+  transition: 0.2s;
+}
+#btn:hover {
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(1.1);
+}
+@media (max-width: 858px) {
+  .form-box {
+    margin: 2%;
+  }
+}

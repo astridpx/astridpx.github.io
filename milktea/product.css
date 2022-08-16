@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* font-family: "Merriweather", serif; */
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: linear-gradient(
+    rgba(182, 224, 157, 0.767),
+    rgba(104, 141, 83, 0.767)
+  );
+  background-attachment: fixed;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  background: #2c7e3d;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 70px;
+  font-weight: 600;
+}
+nav ul {
+  float: right;
+  /* text-align: right; */
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.active {
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  background-color: rgb(66, 255, 161);
+  transition: 0.3s;
+  margin-right: 35px;
+  margin-left: 30px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(13, 14, 13);
+}
+.active:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(12);
+  transform: scale(1.2);
+}
+nav ul li a:hover {
+  /* color: rgb(41, 105, 25); */
+  color: #6af16f;
+}
+/* dispplay none to hide checkbutton or label */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* display none to hide the checkbox */
+#check {
+  display: none;
+}
+
+/* content */
+.product-content {
+  padding: 80px;
+}
+
+.title-offer {
+  margin-bottom: 15%;
+  margin-top: 9%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #3a3838;
+}
+.img-left img {
+  float: left;
+}
+.img-right img {
+  float: right;
+}
+
+.text-right {
+  clear: right;
+  background-color: rgb(93, 204, 130);
+  text-align: center;
+  padding: 5%;
+  letter-spacing: 2px;
+
+  display: flex;
+  width: 37%;
+
+  line-height: 1.7;
+  margin: auto;
+  margin-bottom: 10%;
+  border: 1px solid rgb(39, 109, 39);
+}
+.text-left {
+  clear: left;
+  background-color: rgb(93, 204, 130);
+  text-align: center;
+  letter-spacing: 2px;
+
+  line-height: 1.7;
+  padding: 5%;
+  width: 37%;
+  display: flex;
+
+  margin: auto;
+  margin-bottom: 10%;
+  border: 1px solid rgb(39, 109, 39);
+}
+
+.img-right img,
+.img-left img {
+  height: 350px;
+  width: 350px;
+}
+
+/* media queries for android*/
+@media (max-width: 927px) {
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 27px;
+    padding: 0 10%;
+  }
+  nav {
+    position: fixed;
+    z-index: 1;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  .active:hover {
+    background: none;
+    color: #6af16f;
+    transform: none;
+  }
+  .active {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  .text-left,
+  .text-right {
+    float: left;
+    /* margin-left: auto; */
+    margin: auto;
+    /* width: 80%; */
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 15%;
+  }
+
+  div,
+  .img-left,
+  .img-right {
+    display: block;
+    align-items: center;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* if the check box was checked */
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/* @media (max-width: 110px) {
+  .logo {
+    display: none;
+  }
+} */

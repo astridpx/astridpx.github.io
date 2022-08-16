@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+.container {
+  background: linear-gradient(rgba(10, 238, 10, 0.1), rgba(9, 107, 5, 0.1)),
+    url("bg4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+/* url(/images/bg4.jpg); */
+
+nav {
+  background: #2c7e3d;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+
+  line-height: 80px;
+  padding: 0 70px;
+  font-weight: 600;
+}
+nav ul {
+  float: right;
+  /* text-align: right; */
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.active {
+  border: 2px solid black;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  /* background-color: #6eeb25; */
+  /* background-color: rgb(98, 236, 139); */
+  background-color: rgb(66, 255, 161);
+  transition: 0.3s;
+  margin-right: 35px;
+  margin-left: 30px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(13, 14, 13);
+}
+.active:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(12);
+  transform: scale(1.2);
+}
+nav ul li a:hover {
+  /* color: rgb(41, 105, 25); */
+  color: #6af16f;
+}
+/* dispplay none to hide checkbutton or label */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* display none to hide the checkbox */
+#check {
+  display: none;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #1ec721c2; */
+  padding-top: 30px;
+}
+iframe {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  box-shadow: 16px 16px 8px -3px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 16px 16px 8px -3px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 16px 16px 8px -3px rgba(0, 0, 0, 0.29);
+  padding-left: 20px;
+}
+.map-text {
+  clear: left;
+  padding: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.8;
+}
+.loc-title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: 900;
+  padding-top: 8%;
+}
+
+/* media for android */
+@media (max-width: 908px) {
+  /* this is menu button */
+  .checkbtn {
+    display: block;
+  }
+  label.logo {
+    font-size: 27px;
+    padding: 0 10%;
+  }
+
+  nav {
+    position: fixed;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  .active:hover {
+    background: none;
+    color: #6af16f;
+    transform: none;
+  }
+  .active {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+
+  iframe {
+    width: 97%;
+    margin-left: 4px;
+  }
+  /* if the check box was checked */
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 372px) {
+  label.logo {
+    font-size: 22px;
+    padding: 0 5%;
+  }
+}

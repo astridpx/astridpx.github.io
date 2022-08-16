@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Chai Habit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- icon -->
+    <link rel="shortcut icon" href="head-logo.png" type="image/x-icon" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b014a35e35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <div class="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img src="logo-1.jpg" class="logo" alt="" />
+      <p class="brand">Chai Habit</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#img-map-loc">Location</a></li>
+        <button id="order-buy" onclick="window.location.href='order.html'">
+          Buy
+        </button>
+      </ul>
+    </div> -->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- <img src="/logo-1.jpg" alt="" /> -->
+      <label class="logo">Chai Habit</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="#img-map-loc">Location</a></li>
+        <button
+          id="order-buy"
+          class="active"
+          onclick="window.location.href='order.html'"
+        >
+          Buy
+        </button>
+      </ul>
+    </nav>
+    <div class="container"></div>
+    <!-- the map -->
+    <div class="page2">
+      <div class="map">
+        <!-- google map -->
+        <iframe
+          id="img-map-loc"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.6771275660426!2d121.15616174909776!3d14.270214064684247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d8b980d12af5%3A0x97a354394eb53a12!2sDrip%20Tea!5e0!3m2!1sen!2sph!4v1652586601266!5m2!1sen!2sph"
+          width="1000"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p class="loc-title">Location</p>
+        <p class="map-text">
+          Chai Habit is located at Purok 4 Brgy. Marinig Cabuyao Laguna. We are
+          400 Meters away from BRGY Marinig Elementary School.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
