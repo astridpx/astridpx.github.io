@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVCC LMS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b014a35e35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./images/svcc-logo.jpg" />
+        <h3>SVCC Library Management System</h3>
+      </nav>
+      <div class="overlay">
+        <div class="login-box">
+          <div class="admin-logo">
+            <img src="./images/admin2.png" alt="" />
+            <h3>ADMIN PANEL</h3>
+            <p class="form-txt">Control panel login</p>
+          </div>
+          <!-- form -->
+          <form action="" class="login-form">
+            <div class="form-input">
+              <i class="fa-solid fa-user icon"></i>
+              <input type="text" name="" placeholder="Username" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-lock icon"></i>
+              <input type="password" name="" placeholder="Password" />
+            </div>
+          </form>
+          <!-- login buttom -->
+          <div class="bottom-content">
+            <button id="login">Login</button>
+          </div>
+        </div>
+        <!-- end of login form -->
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="left-box">
+            <div class="left-content">
+              <h3>SVCC LMS</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur similique dolorem totam consequatur reprehenderit
+                sapiente? Possimus excepturi ad dolore similique.
+              </p>
+            </div>
+          </div>
+
+          <div class="right-box">
+            <div class="right-content">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Brgy. Mamatid Cabuyao Laguna</p>
+            </div>
+            <div class="right-content">
+              <i class="fa-solid fa-phone"></i>
+              <p>+49 531 1671</p>
+            </div>
+            <div class="right-content">
+              <i class="fa-solid fa-globe"></i>
+              <a href="#">stvincentcollege.edu.ph</a>
+            </div>
+            <div class="right-content">
+              <i class="fa-brands fa-facebook-messenger"></i>
+              <a href="https://www.facebook.com/svcccabuyaoofficial/?ti=as"
+                >Send a message</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-google-plus"></i>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      let login = document
+        .querySelector("#login")
+        .addEventListener("click", () => {
+          window.location.href = "dashboard.html";
+        });
+    </script>
+  </body>
+</html>

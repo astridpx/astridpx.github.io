@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVCC LMS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/student-records.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="logo">
+          <img src="./images/open-book-logo.jpg" class="logo-pic" />
+          <h3>SVCC LMS</h3>
+        </div>
+        <div class="title">
+          <h3>Library Management System</h3>
+        </div>
+      </header>
+
+      <!-- ######################
+          START OF SIDEBAR
+         #######################-->
+      <nav class="open">
+        <div class="sidebar">
+          <div class="underline"></div>
+          <div class="menu">
+            <img src="./images/admin2.png" id="profile" />
+            <span class="user-menu">Admin</span>
+          </div>
+
+          <div class="sidebar-content">
+            <ul class="lists">
+              <!-- dashboard -->
+              <li class="list">
+                <a href="dashboard.html" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <!-- student -->
+              <li class="list">
+                <a href="student-records.html" class="nav-link">
+                  <i class="bx bx-book-reader icon" id="active"></i>
+                  <span class="link" id="active">Student</span>
+                </a>
+              </li>
+              <!-- Issue Books -->
+              <li class="list">
+                <a href="issue-book.html" class="nav-link">
+                  <i class="bx bx-book-bookmark icon"></i>
+                  <span class="link">Issue Books</span>
+                </a>
+              </li>
+              <!-- return books -->
+              <li class="list">
+                <a href="return-book.html" class="nav-link">
+                  <i class="bx bx-library icon"></i>
+                  <span class="link">Return Books</span>
+                </a>
+              </li>
+              <!-- Books -->
+              <li class="list">
+                <a href="books.html" class="nav-link">
+                  <i class="bx bx-book icon"></i>
+                  <span class="link">Books</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End of list -->
+            <div class="bottom-cotent">
+              <!-- logout -->
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-log-out icon a"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ######################
+          END OF SIDEBAR
+         #######################-->
+
+      <div class="table-wrapper">
+        <h2>Student All Records</h2>
+        <div class="search-box">
+          <input type="text" placeholder="Search here..." id="search" />
+          <button class="btn-search">Search</button>
+          <div class="filter-date">
+            <!-- date from -->
+            <label for="date-from" class="date-label">Date From:</label>
+            <input type="date" class="date-from date" />
+            <!-- date to -->
+            <label for="date-to" class="date-label">Date To:</label>
+            <input type="date" class="date-to date" />
+          </div>
+        </div>
+        <div class="fixTableHead">
+          <table>
+            <thead>
+              <tr>
+                <th id="bookID">ISBN</th>
+                <th>Book Title</th>
+                <th>Student ID</th>
+                <th>Student name</th>
+                <th>Email</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>209381</td>
+                <td>HCI II</td>
+                <td>AY2020-2828</td>
+                <td>Jonas Sy</td>
+                <td>jonas123@gmail.com</td>
+                <td>08-21-2022</td>
+                <td>08-31-2022</td>
+              </tr>
+              <tr>
+                <td>209381</td>
+                <td>HCI II</td>
+                <td>AY2020-2828</td>
+                <td>Jonas Sy</td>
+                <td>jonas123@gmail.com</td>
+                <td>08-21-2022</td>
+                <td>08-31-2022</td>
+              </tr>
+              <tr>
+                <td>209381</td>
+                <td>HCI II</td>
+                <td>AY2020-2828</td>
+                <td>Jonas Sy</td>
+                <td>jonas123@gmail.com</td>
+                <td>08-21-2022</td>
+                <td>08-31-2022</td>
+              </tr>
+              <tr>
+                <td>209381</td>
+                <td>HCI II</td>
+                <td>AY2020-2828</td>
+                <td>Jonas Sy</td>
+                <td>jonas123@gmail.com</td>
+                <td>08-21-2022</td>
+                <td>08-31-2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
